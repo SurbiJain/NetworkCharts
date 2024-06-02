@@ -11,12 +11,12 @@ function App() {
 
       <div className="container mx-auto">
         <Barchart2 />
-        <div className="flex flex-row">
-          <div className="basis-1/2">
-          <Barchart1 />
+        <div className="flex flex-col md:flex-row lg:flex-row">
+          <div className="w-full md:w-50 lg:w-50">
+            <Barchart1 />
           </div>
-          <div className="basis-1/2">
-        <Barchart3 />
+          <div className="w-full md:w-50 lg:w-50">
+            <Barchart3 />
           </div>
         </div>
       </div>
