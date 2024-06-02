@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Barchart1 from "./barchart/Barchart1";
+import Barchart2 from "./barchart/Barchart2";
+import Barchart3 from "./barchart/Barchart3";
+import Header from "./header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App text-white">
+      <Header />
+
+      <div className="container mx-auto">
+        <Barchart2 />
+        <div className="flex flex-row">
+          <div className="basis-1/2">
+          <Barchart1 />
+          </div>
+          <div className="basis-1/2">
+        <Barchart3 />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
